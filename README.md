@@ -15,3 +15,9 @@ Las variables contan de tres elementos:
 **nombre:** es el indentificador único para referirse a la variable.
 **Tipo de dato:**  es el tipo de información que se almacena en la variable, puede ser decimales, cadenas de texto, booleanos.
 **Valor:** es el contenido actual almacenado en la variable.
+
+### Reglas para nombrar variables
+
+- Los nombres de las variables no pueden contener espacios.
+- Los nombres de las variables pueden ininiar con una letra, con guión bajo o con el signo de pesos o de dolar ($).
+- No se pueden utilizar como variables palabras reservadas del lenguaje.
