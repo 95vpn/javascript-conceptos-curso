@@ -52,3 +52,17 @@ Existen seis tipos de datos primitivos controlados por el operador `typeof` :
 - **Undefined:**  Representa una variable la cual no se le asignado un valor `console.log(typeof(undefined)) -> undefined`.
 - ** BigInt:** Representa valores númericos demasiado grandes `console.log(typeof(27n)) -> 'bigint'`.
 - **Symbol:** Se usa para crear valores único, irrepetibles `console.log(typeof(Symbol)) -> ''function`.
+
+###  Coerción de tipos
+
+La coerción hace referencia a la converción automática o implicita de tipos de datos.
+
+La conversión es similar a la coerción porque ambas convierten valores de un tipo de dato a otro. 
+
+La coerción es implicita mientra la conversión puede ser implicita o explicita.
+
+Ejemplo:
+
+- Implicita `console.log(27 + '5') -> 275`.
+- Explicita `console.log(27 + Number('5')) -> 32`
+
