@@ -29,3 +29,14 @@ Algunos operadores en Javascript son:
 - **Resta:** se utiliza el operador - `(a - b)`.
 - **Multiplicación:** se utiliza el operador `*` `(a * b)`.
 - **División:** se utiliza el operador / `(a / b)`.
+
+  ###  Librería Math
+
+Existen varios methodos de la [librería Math](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math "librería Math") para hacer otra operaciones:
+-  `Math.pow(20, 2) -> 400`
+-  `Math.round(42.8) -> 43`
+-  `Math.ceil(4.3) -> 5`
+-  `Math.floor(4.9) -> 4`
+- `Math.trunc(4.2) -> 4`
+- `Math.sign(5) -> 1`
+- `Math.abs(-5.5) -> 5.5`
