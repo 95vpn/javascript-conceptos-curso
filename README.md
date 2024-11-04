@@ -21,3 +21,11 @@ Las variables contan de tres elementos:
 - Los nombres de las variables no pueden contener espacios.
 - Los nombres de las variables pueden ininiar con una letra, con guión bajo o con el signo de pesos o de dolar ($).
 - No se pueden utilizar como variables palabras reservadas del lenguaje.
+
+## Operaciones Aritméticas
+
+Algunos operadores en Javascript son:
+- **Suma: **se utiliza eñ operador + `(a + b)`.
+- **Resta:** se utiliza el operador - `(a - b)`.
+- **Multiplicación:** se utiliza el operador `*` `(a * b)`.
+- **División:** se utiliza el operador / `(a / b)`.
