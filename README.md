@@ -29,3 +29,62 @@ Algunos operadores en Javascript son:
 - **Resta:** se utiliza el operador - `(a - b)`.
 - **Multiplicación:** se utiliza el operador `*` `(a * b)`.
 - **División:** se utiliza el operador / `(a / b)`.
+
+  ###  Librería Math
+
+Existen varios methodos de la [librería Math](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math "librería Math") para hacer otra operaciones:
+-  `Math.pow(20, 2) -> 400`
+-  `Math.round(42.8) -> 43`
+-  `Math.ceil(4.3) -> 5`
+-  `Math.floor(4.9) -> 4`
+- `Math.trunc(4.2) -> 4`
+- `Math.sign(5) -> 1`
+- `Math.abs(-5.5) -> 5.5`
+
+## Tipos de Datos en Javascript
+
+### Datos primitivos de Javascript
+
+Existen seis tipos de datos primitivos controlados por el operador `typeof` :
+- **String:** Representa datos textuales `console.log(typeof("user")) -> 'string'`.
+- **Number:** Permite representar o manipular valores numéricos `console.log(typeof(259)) -> 'number'`.
+- **Boolean:** Representa un valorr lógico true o false `console.log(typeof(true)) -> 'boolean'`.
+- **Undefined:**  Representa una variable la cual no se le asignado un valor `console.log(typeof(undefined)) -> undefined`.
+- ** BigInt:** Representa valores númericos demasiado grandes `console.log(typeof(27n)) -> 'bigint'`.
+- **Symbol:** Se usa para crear valores único, irrepetibles `console.log(typeof(Symbol)) -> ''function`.
+
+###  Coerción de tipos
+
+La coerción hace referencia a la converción automática o implicita de tipos de datos.
+
+La conversión es similar a la coerción porque ambas convierten valores de un tipo de dato a otro. 
+
+La coerción es implicita mientra la conversión puede ser implicita o explicita.
+
+Ejemplo:
+
+- Implicita `console.log(27 + '5') -> 275`.
+- Explicita `console.log(27 + Number('5')) -> 32`
+  
+## Booleanos
+
+El objeto Boolean es un dato de tipo lógico, dejando que javascript se encargue de convertirlo a cadena o número en función del contexto.
+Consta de dos valores: 
+- Un booleano **true** equivale a 1, para verdadero 
+- Un booleano **false** equivale a 0, para falso.
+
+Su uso es imprescindible para el uso de bucles y condicionales
+
+### Valores Truthy y Falsy
+
+Los valores convertibles a false se conocen como **falsy**, estos son:
+- 0
+- "" (string vacío)
+- false
+- NaN
+- undefined
+- null
+
+Los valores **truthy** son todos los valores que no sean falsy, es aquel que es verdadero en un contexto booleano.
+
+
