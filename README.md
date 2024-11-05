@@ -127,3 +127,51 @@ Si comparas letras minúsculas y mayúsculas, debes recordar que las mayúsculas
  console.log(cadena1 < cadena2) -> true
 ```
 
+## Condiciones
+Tomando deciciones en tu código, se puede condicionar un bloque código para que se ejecute unicamente si un criterio se a cumplido.
+
+- Condicional **if**
+
+**if** (condición) ejecuta código de ser verdadero (true).
+
+`if(62) console.log('62 es truthy') -> 62 e truthy`
+
+Cuando **if** tienen más de una linea de código se deben  utilizar llaves.
+
+```javascript
+if(18) {
+	console.log('18 es truthy') -> 10 es truthy
+	console.log('🚘') -> 🚘
+}
+````
+
+- Condicional **if ... else**
+
+Si el **if** no se cumple se ejecuta el **else**.
+
+```javascript
+let edad = 16;
+if(edad >= 18) {
+	console.log('Eres mayor de edad')
+} else {
+	console.log('Eres menor de edad') -> Eres menor de edad
+}
+```
+- Condicional **else if**
+
+Ayuda a especificar multiples condiciones, que significa 'de lo contrario si'
+
+```javascript
+let calificacion = 2;
+
+if(calificacion == 10) {
+    console.log('Excelente🚗')
+} else if(calificacion > 7) {
+    console.log('Muy Bien 🚓')
+} else if(calificacion > 5) {
+    console.log('Puedes mejorar 🚕')
+} else {
+    console.log('reprobado 🛺') -> reprobado 🛺
+}
+```
+
