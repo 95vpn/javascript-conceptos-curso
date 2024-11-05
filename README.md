@@ -119,7 +119,7 @@ let resultado1 = resultado < edad;
 ### Comparación de Cadenas de texto
 Al comparar cadenas de texto en Javascript usa los valores [unicode](https://es.wikipedia.org/wiki/Unicode "unicode") de los caracteres.
 
-Si comparas letras minúsculas y mayusculas, debes recordar que las mayúsculas tienen valores menores a las minúsculas.
+Si comparas letras minúsculas y mayúsculas, debes recordar que las mayúsculas tienen valores menores a las minúsculas.
 
 ```javascript
  let cadena1 = 'Javascript';
