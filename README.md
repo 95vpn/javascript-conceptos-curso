@@ -87,4 +87,43 @@ Los valores convertibles a false se conocen como **falsy**, estos son:
 
 Los valores **truthy** son todos los valores que no sean falsy, es aquel que es verdadero en un contexto booleano.
 
+## Operadores de Comparación
+Permiten comparar dos operadores y devuelven un valor booleano.
+
+En caso de que los operadores sean de tipo diferente, javascript intenta convertirlos a un mismo tipo para poder compararlos.
+
+| Operador  | Significado  |
+| ------------ | ------------ |
+|  `x == y` | Devuelve **true** si los dos operadores son iguales.  |
+| `x === y`  | Devuelve **true** si los dos operadores son iguales y son del mismo tipo.   |
+| `x != y`  | Devuelve **true** si los operadroes son diferentes.  |
+| `x !== y`  | Devuelve **true** si los operadores son diferentes y son del mismo tipo.  |
+|  `x > y` | Devuelve **true** si el operando de la izquierda es mayor que el operando de la derecha.  |
+| `x >= y`  | Devuelve **true** si el operando de la derecha es mayor o igual al operando de la derecha.  |
+| `x < y`  | Devuelve **true** si el operando de la izquierda es menor que el operando de la derecha.  |
+| `x <= y `  | Devuelve **true** si el operando de la izquierda es menor o igual que el operando de la derecha.  |
+
+Ejemplo:
+
+
+```javascript
+let resultado = 23 < 4;
+// 23 no es menor que 4, resultado es false
+resultado = 23 > 4;
+// 23 es mayor 4, resultado es true
+let edad = 24;
+let resultado1 = resultado < edad;
+// 	En Javascript al comparar un booleano (true) con un numero, true se convierte en 1 y false en 0, resultado1 es true por lo que 1 < 24.
+```
+
+### Comparación de Cadenas de texto
+Al comparar cadenas de texto en Javascript usa los valores [unicode](https://es.wikipedia.org/wiki/Unicode "unicode") de los caracteres.
+
+Si comparas letras minúsculas y mayúsculas, debes recordar que las mayúsculas tienen valores menores a las minúsculas.
+
+```javascript
+ let cadena1 = 'Javascript';
+ let cadena2 = 'javascript'
+ console.log(cadena1 < cadena2) -> true
+```
 
