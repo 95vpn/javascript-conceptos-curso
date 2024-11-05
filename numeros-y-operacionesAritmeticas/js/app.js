@@ -17,3 +17,4 @@ console.log(Math.pow(20, 2))
 console.log(Math.round(42.8))
 
 console.log(Math.round(42.4))
+console.log(Math.ceil(4.5))
