@@ -65,4 +65,26 @@ Ejemplo:
 
 - Implicita `console.log(27 + '5') -> 275`.
 - Explicita `console.log(27 + Number('5')) -> 32`
+  
+## Booleanos
+
+El objeto Boolean es un dato de tipo lógico, dejando que javascript se encargue de convertirlo a cadena o número en función del contexto.
+Consta de dos valores: 
+- Un booleano **true** equivale a 1, para verdadero 
+- Un booleano **false** equivale a 0, para falso.
+
+Su uso es imprescindible para el uso de bucles y condicionales
+
+### Valores Truthy y Falsy
+
+Los valores convertibles a false se conocen como **falsy**, estos son:
+- 0
+- "" (string vacío)
+- false
+- NaN
+- undefined
+- null
+
+Los valores **truthy** son todos los valores que no sean falsy, es aquel que es verdadero en un contexto booleano.
+
 
