@@ -127,3 +127,124 @@ Si comparas letras minúsculas y mayúsculas, debes recordar que las mayúsculas
  console.log(cadena1 < cadena2) -> true
 ```
 
+## Operadores Lógicos
+Los operadores lógicos comparan valores booleanos y devuelven valores booleanos.
+
+- ### OR ` || `
+
+Es representado por `||`
+En la programación **clásica** si un operador es **true** devuelve **true**, de lo contrario devuelve **false**.
+```javascript
+console.log(true || true) -> true
+console.log(true || false) -> true
+console.log(false || true) -> true
+console.log(false || false) -> false
+```
+**Multiples valores aplicados al operador `||`**
+
+Evalua los operandos de izquierda a derecha.
+Devuelve el primer valor verdadero o el último valor si todos son falsos.
+
+```javascript
+console.log(null || 1 || undefined || 0) -> 1
+//devuelve el primer valor verdadero, 1
+
+console.log(null || undefined || 0) -> 0
+//devuelve el último valor si todo son falsos, 0
+```
+**Evaluación de Cortocircuito**
+El operador `||` procesa sus argumentos hasta alcanzar el primer valor verdadero y ese valor se devuelve sin tocar el otro argumento.
+```javascript
+function A() {
+	console.log('llamada A')
+	return false;
+}
+
+function B() {
+	console.log('llamada B') -> llamada B
+	return true;
+}
+
+console.log(B() || A()) -> true
+```
+
+El operador `||` detiene la evalución al ejecutar la función `B()` y devuelve **true**.
+
+A veces se usa el cortocircuito, para ejecutar comandos solo si la parte izquierda es falsa.
+
+- ### AND &&
+
+Es representado por `&&`
+
+El la programación clásica devuelve **false** si un operador es **false** de lo contrario devuelve **true**. 
+
+```javascript
+console.log(true && true) -> true
+console.log(true && false) -> false
+console.log(false && true) -> false
+console.log(false && false) -> false
+```
+**Multiples valores aplicados al operador `&&`**
+
+Evalua los operandos de izquierda a derecha.
+Devuelve el primer valor falso o el último valor si todos son verdadero.
+
+```javascript
+console.log(true && 15 && 0  && 'asder') -> 0
+//devuerve el primer valor falsy
+
+console.log(true && 15 && '0'  && 'asder') -> asder
+//devuelve el último valor verdadero
+```
+> Precedencia del operador AND `&&` es mayor que la del operador OR `||`
+El código `a && b || c && d` es lo mismo que `(a && b) || (c && d)`
+
+
+## Condiciones
+Tomando deciciones en tu código, se puede condicionar un bloque código para que se ejecute unicamente si un criterio se a cumplido.
+
+- Condicional **if**
+
+**if** (condición) ejecuta código de ser verdadero (true).
+
+`if(62) console.log('62 es truthy') -> 62 e truthy`
+
+Cuando **if** tienen más de una linea de código se deben  utilizar llaves.
+
+```javascript
+if(18) {
+	console.log('18 es truthy') -> 10 es truthy
+	console.log('🚘') -> 🚘
+}
+````
+
+- Condicional **if ... else**
+
+Si el **if** no se cumple se ejecuta el **else**.
+
+```javascript
+let edad = 16;
+if(edad >= 18) {
+	console.log('Eres mayor de edad')
+} else {
+	console.log('Eres menor de edad') -> Eres menor de edad
+}
+```
+- Condicional **else if**
+
+Ayuda a especificar multiples condiciones, que significa 'de lo contrario si'
+
+```javascript
+let calificacion = 2;
+
+if(calificacion == 10) {
+    console.log('Excelente🚗')
+} else if(calificacion > 7) {
+    console.log('Muy Bien 🚓')
+} else if(calificacion > 5) {
+    console.log('Puedes mejorar 🚕')
+} else {
+    console.log('reprobado 🛺') -> reprobado 🛺
+}
+```
+
