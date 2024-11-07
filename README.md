@@ -200,6 +200,29 @@ console.log(true && 15 && '0'  && 'asder') -> asder
 El código `a && b || c && d` es lo mismo que `(a && b) || (c && d)`
 
 
+- ### 	NOT `!`
+
+Se representa con el signo de exclamación `!`.
+
+Acepta un solo argumento y devuelve el valor contrario.
+
+```javascript
+console.log(!true) -> false
+console.log(!"") -> true
+```
+El doble NOT `!!` sirve para convertir explicitamente cualquier valor a tipo booleano.
+
+El primer `!` convierte el valor a booleano el segundo `!` lo invierte de nuevo.
+
+```javascript
+console.log(!!"") -> false
+console.log(!!"0") -> true
+//tenemos la conversión a booleano
+```
+
+La precedencia del `!!` es mayor que todos los operadores lógicos, se ejecuta primero antes que `&&` y `||`.
+
+
 ## Condiciones
 Tomando deciciones en tu código, se puede condicionar un bloque código para que se ejecute unicamente si un criterio se a cumplido.
 
