@@ -4,7 +4,7 @@
 
 **Javascript** en un lenguaje **dinamicamente tipado**, hace referencia a que no hay que especificar el tipo de dato cuando la declaras. También es un lenguaje de **tipado debil** que permite realizar operaciones entre diferentes tipos de datos sin convertirlos previamente.
 
-## Variables y Contantes
+## Variables y Constantes
 
 En programación una variable es un espacio en memoria  en la cual podemos guardar números, texto.
 
@@ -50,7 +50,7 @@ Existen seis tipos de datos primitivos controlados por el operador `typeof` :
 - **Number:** Permite representar o manipular valores numéricos `console.log(typeof(259)) -> 'number'`.
 - **Boolean:** Representa un valorr lógico true o false `console.log(typeof(true)) -> 'boolean'`.
 - **Undefined:**  Representa una variable la cual no se le asignado un valor `console.log(typeof(undefined)) -> undefined`.
-- ** BigInt:** Representa valores númericos demasiado grandes `console.log(typeof(27n)) -> 'bigint'`.
+- **BigInt:** Representa valores númericos demasiado grandes `console.log(typeof(27n)) -> 'bigint'`.
 - **Symbol:** Se usa para crear valores único, irrepetibles `console.log(typeof(Symbol)) -> ''function`.
 
 ###  Coerción de tipos
@@ -199,6 +199,81 @@ console.log(true && 15 && '0'  && 'asder') -> asder
 > Precedencia del operador AND `&&` es mayor que la del operador OR `||`
 El código `a && b || c && d` es lo mismo que `(a && b) || (c && d)`
 
+
+- ### 	NOT `!`
+
+Se representa con el signo de exclamación `!`.
+
+Acepta un solo argumento y devuelve el valor contrario.
+
+```javascript
+console.log(!true) -> false
+console.log(!"") -> true
+```
+El doble NOT `!!` sirve para convertir explicitamente cualquier valor a tipo booleano.
+
+El primer `!` convierte el valor a booleano el segundo `!` lo invierte de nuevo.
+
+```javascript
+console.log(!!"") -> false
+console.log(!!"0") -> true
+//tenemos la conversión a booleano
+```
+
+La precedencia del `!!` es mayor que todos los operadores lógicos, se ejecuta primero antes que `&&` y `||`.
+
+- ### Operador Nullish Coalescing `??`
+Se escribe con doble signo de cierre de interrogación `??`
+
+Es un operador que retorna el operando del lado derecho cuando el operando del lado izquierdo es `null` o `undefined`, caso contrario retorna el operando del lado izquierdo.
+
+```javascript
+let valor = false;
+console.log(valor ?? 'retorna esto') -> false
+
+let numero = 8;
+console.log(numero ?? 'retorna esto') -> 8
+
+let numero1 = 0;
+console.log(numero1 ?? 'reotrna esto') -> 0
+
+let texto = '';
+console.log(texto ?? 'retorna esto') -> ''
+
+let texto1;
+console.log(texto1 ?? 'retorna esto') -> retorna esto
+
+let valor1 = null;
+console.log(valor1 ?? 'retorna esto') -> retorna esto
+```
+
+> Devuelve el primer argumento cuando no es `null` ni `undefined`
+
+Comparación con OR `||`
+
+El operador `||` puede ser usado de la misma manera que `??`.
+
+```javascript
+let definido = 'está definido';
+
+console.log(null ?? undefined ?? definido ?? 'retorna esto') -> está definido
+
+console.log(null || undefined || definido || 'retorna esto') -> está definido
+```
+> `||` Devuelve el primer valor verdadero.
+> `??` Devuelve el primer valor definido.
+
+### Precedencia
+- La precedencia del operador `??` es la misma que `||`.
+- `??` `||` son evaluados antes que `?` `=` pero después de la mayoría de operaciones como  `+` `*`.
+
+### Prohibición de uso entre `??` , `||`, `&&`.
+Se prohibe el uso de ?? con `||` y `&&`, salvo que la precedencia sea explécitamente especificada con paréntesis.
+
+```javascript
+console.log(1 && 2 ??3) -> Syntax error
+console.log((1 && 2) ?? 3) -> 2
+```
 
 ## Condiciones
 Tomando deciciones en tu código, se puede condicionar un bloque código para que se ejecute unicamente si un criterio se a cumplido.
