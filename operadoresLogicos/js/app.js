@@ -24,3 +24,33 @@ console.log(A() || B())
 console.log(2 && 3 && 0 && 'asder')
 
 console.log(true && 15 && '0' && 'asder')
+
+//not
+
+console.log(!"")
+
+//double not
+
+console.log(!!"")
+console.log(!!"0")
+
+// nullish coalescing ?? (fusión de nulos)
+
+let valor = false;
+console.log(valor ?? 'retorna esto')
+
+let numero = 8;
+console.log(numero ?? 'retorna esto')
+
+let numero1 = 0;
+console.log(numero1 ?? 'retorna esto')
+
+let texto = '';
+console.log(texto ?? 'retorna esto')
+
+let texto1;
+console.log(texto1 ?? 'retorna esto')
+
+let valor1 = null;
+console.log(valor1 ?? 'retorna esto')
+
