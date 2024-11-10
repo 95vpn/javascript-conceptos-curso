@@ -323,3 +323,6 @@ if(calificacion == 10) {
 }
 ```
 
+## Ciclos || Bucles
+
+Un ciclo en programación también conocido como bucles. Permite crear repeticiones (ejecutar repetidamente en conjunto de instrucciones).
