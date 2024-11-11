@@ -323,3 +323,140 @@ if(calificacion == 10) {
 }
 ```
 
+## Ciclos || Bucles
+
+Un ciclo en programación también conocido como bucles son una estructura de control que permiten repetir un bloque de instrucciones las veces que sea necesario.
+
+### Bucle for
+Sintaxis:
+```javascript
+for( [instrucción_inicial];  [condición];  [instrucción_después_de _cada_interación] ){
+	//bloque_de_instrucciones
+}
+```
+**instrucción_inicial:** declaramos la variable con el valor inicial que se ejecuta el bucle.
+**condición:** hasta que valor debe ejecutarse el bucle.
+**instrucción_después_de _cada_interación:** es utilizada para incrementar o decrementar el valor de la variable luego de cada iteración.
+
+Ejemplo:
+```javascript
+for(let i = 1; i <= 5; i++ ){
+    console.log('repetir frase') ->
+}
+```
+**instrucción_inicial:**let i = 1, varible declara i con el valor de 1.
+**condición:**  i <= 5 se va a repetir la frase 5 veces.
+**instrucción_después_de _cada_interación:** va ha incrementar el valor de la varible en 1 hasta menor o igual a 5.
+
+### Bucle While
+El bloque de código se ejecutará mientras la condicion sea verdadera.
+
+Sintaxis:
+```javascript
+[instrucción_inicial]
+while([condición]) {
+	//instrucciones de código
+	[instrucción_después_de _cada_iteración]
+}
+```
+Ejemplo:
+Resolviendo el ejemplo anterior pero ahora con while.
+```javascript
+let i = 1;
+while(i<= 5) {
+	console.log('Repetir frase')
+	i++
+}
+```
+**instrucción_inicial:** declaramos la variable con el valor inicial que se ejecuta el bucle.
+**condición:** hasta que valor debe ejecutarse el bucle.
+**instrucción_después_de _cada_interación:** es utilizada para incrementar o decrementar el valor de la variable luego de cada iteración.
+
+### Bucle do ... while
+Se ejecuta el bloque de intrucciones al menos una vez.
+
+## Arreglos
+Un arreglo es una colección de datos de cualquier tipo agrupados en una sola estructura.
+
+**Datos de cualquier tipo: ** funciones, objetos, números, cadenas, booleanos incluso otros arreglos.
+
+Los arreglos tienen longitud que es igual a la cantidad de elementos dentro del arreglo. La última posición del arreglo es la longitud del arreglo menos uno.
+
+La posición de un elemento en el arreglo es conocido como indice, el indice del arreglo empieza con `0` y se incrementa en 1 con cada elemento.
+
+Los arreglos se representan con corchetes `[ ]` y cada dato está separados por `(,)`.
+
+```javascript
+let arreglo = [96, 'string', {}, true, [1, 2, 2]];
+						0      1       2     3  	  4
+```
+### Obtener elementos dentro del arreglo
+```javascript
+let arreglo = [ 10, 8, "manzana", "pera", true, false]
+
+console.log(arreglo[2]) -> "manzana"
+
+```
+### Método par arreglos
+Dado el arreglo:
+`let arreglo1 = [ 10, 8, "manzana", "pera", true, false];`
+
+| Método  | Concepto  |
+| ------------ | ------------ |
+| push()  | Añade un elemento al final del Array |
+```javascript
+let nuevaLogitud = arreglo1.push('Naranja')
+console.log(nuevaLogitud) -> 7
+console.log(arreglo1) -> 10, 8, "manzana", "pera", true, false, Naranja 
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| pop()  | Elimina el último elemento del Array  |
+```javascript
+let ultimo = arreglo1.pop()
+console.log(arreglo1) -> 10, 8, "manzana", "pera", true, false
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| unshift()  | Añade un elemento al principio del Array  |
+```javascript
+let addArreglo1 = arreglo1.unshift("fresa")
+console.log(arreglo1) -> "fresa", 0, 8, "manzana", "pera", true, false
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| shift()  | Elimina el primer elemento del Array  |
+```javascript
+let eliArreglo1 = arreglo1.shift()
+console.log(arreglo1) -> 0, 8, "manzana", "pera", true, false
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| indexOf()  | Encuentra el indice del elemento del Array  |
+```javascript
+let encIndice = arreglo1.indexOf( "pera")
+console.log(encIndice) -> 3
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| splice()  | Elimina uno o varios elementos mediante su posición  |
+```javascript
+let eliminarElem = arreglo1.splice(2,2)
+console.log(eliminarElem) -> "manzana", "pera"
+console.log(arreglo1) -> 0, 8, true, false
+//splice modifica el arreglo original, es recomendable hacer una copia del arreglo
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| slice()  | Copia un array  |
+```javascript
+let copiaArr = arreglo1.slice()
+console.log(copiaArr) -> 0, 8, true, false
+```
+
+
+
+
+
+
+
