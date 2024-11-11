@@ -330,7 +330,47 @@ Un ciclo en programación también conocido como bucles son una estructura de co
 ### Bucle for
 Sintaxis:
 ```javascript
-for( instrucción_inicial;  condición;  instrucción_después_de _cada_interación ){
+for( [instrucción_inicial];  [condición];  [instrucción_después_de _cada_interación] ){
 	//bloque_de_instrucciones
 }
 ```
+**instrucción_inicial:** declaramos la variable con el valor inicial que se ejecuta el bucle.
+**condición:** hasta que valor debe ejecutarse el bucle.
+**instrucción_después_de _cada_interación:** es utilizada para incrementar o decrementar el valor de la variable luego de cada iteración.
+
+Ejemplo:
+```javascript
+for(let i = 1; i <= 5; i++ ){
+    console.log('repetir frase') ->
+}
+```
+**instrucción_inicial:**let i = 1, varible declara i con el valor de 1.
+**condición:**  i <= 5 se va a repetir la frase 5 veces.
+**instrucción_después_de _cada_interación:** va ha incrementar el valor de la varible en 1 hasta menor o igual a 5.
+
+### Bucle While
+El bloque de código se ejecutará mientras la condicion sea verdadera.
+
+Sintaxis:
+```javascript
+[instrucción_inicial]
+while([condición]) {
+	//instrucciones de código
+	[instrucción_después_de _cada_iteración]
+}
+```
+Ejemplo:
+Resolviendo el ejemplo anterior pero ahora con while.
+```javascript
+let i = 1;
+while(i<= 5) {
+	console.log('Repetir frase')
+	i++
+}
+```
+**instrucción_inicial:** declaramos la variable con el valor inicial que se ejecuta el bucle.
+**condición:** hasta que valor debe ejecutarse el bucle.
+**instrucción_después_de _cada_interación:** es utilizada para incrementar o decrementar el valor de la variable luego de cada iteración.
+
+### Bucle do ... while
+Se ejecuta el bloque de intrucciones al menos una vez.
