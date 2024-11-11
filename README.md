@@ -374,3 +374,89 @@ while(i<= 5) {
 
 ### Bucle do ... while
 Se ejecuta el bloque de intrucciones al menos una vez.
+
+## Arreglos
+Un arreglo es una colección de datos de cualquier tipo agrupados en una sola estructura.
+
+**Datos de cualquier tipo: ** funciones, objetos, números, cadenas, booleanos incluso otros arreglos.
+
+Los arreglos tienen longitud que es igual a la cantidad de elementos dentro del arreglo. La última posición del arreglo es la longitud del arreglo menos uno.
+
+La posición de un elemento en el arreglo es conocido como indice, el indice del arreglo empieza con `0` y se incrementa en 1 con cada elemento.
+
+Los arreglos se representan con corchetes `[ ]` y cada dato está separados por `(,)`.
+
+```javascript
+let arreglo = [96, 'string', {}, true, [1, 2, 2]];
+						0      1       2     3  	  4
+```
+### Obtener elementos dentro del arreglo
+```javascript
+let arreglo = [ 10, 8, "manzana", "pera", true, false]
+
+console.log(arreglo[2]) -> "manzana"
+
+```
+### Método par arreglos
+Dado el arreglo:
+`let arreglo1 = [ 10, 8, "manzana", "pera", true, false];`
+
+| Método  | Concepto  |
+| ------------ | ------------ |
+| push()  | Añade un elemento al final del Array |
+```javascript
+let nuevaLogitud = arreglo1.push('Naranja')
+console.log(nuevaLogitud) -> 7
+console.log(arreglo1) -> 10, 8, "manzana", "pera", true, false, Naranja 
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| pop()  | Elimina el último elemento del Array  |
+```javascript
+let ultimo = arreglo1.pop()
+console.log(arreglo1) -> 10, 8, "manzana", "pera", true, false
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| unshift()  | Añade un elemento al principio del Array  |
+```javascript
+let addArreglo1 = arreglo1.unshift("fresa")
+console.log(arreglo1) -> "fresa", 0, 8, "manzana", "pera", true, false
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| shift()  | Elimina el primer elemento del Array  |
+```javascript
+let eliArreglo1 = arreglo1.shift()
+console.log(arreglo1) -> 0, 8, "manzana", "pera", true, false
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| indexOf()  | Encuentra el indice del elemento del Array  |
+```javascript
+let encIndice = arreglo1.indexOf( "pera")
+console.log(encIndice) -> 3
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| splice()  | Elimina uno o varios elementos mediante su posición  |
+```javascript
+let eliminarElem = arreglo1.splice(2,2)
+console.log(eliminarElem) -> "manzana", "pera"
+console.log(arreglo1) -> 0, 8, true, false
+//splice modifica el arreglo original, es recomendable hacer una copia del arreglo
+```
+| Método  | Concepto  |
+| ------------ | ------------ |
+| slice()  | Copia un array  |
+```javascript
+let copiaArr = arreglo1.slice()
+console.log(copiaArr) -> 0, 8, true, false
+```
+
+
+
+
+
+
+
