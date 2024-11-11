@@ -325,4 +325,12 @@ if(calificacion == 10) {
 
 ## Ciclos || Bucles
 
-Un ciclo en programación también conocido como bucles. Permite crear repeticiones (ejecutar repetidamente en conjunto de instrucciones).
+Un ciclo en programación también conocido como bucles son una estructura de control que permiten repetir un bloque de instrucciones las veces que sea necesario.
+
+### Bucle for
+Sintaxis:
+```javascript
+for( instrucción_inicial;  condición;  instrucción_después_de _cada_interación ){
+	//bloque_de_instrucciones
+}
+```
