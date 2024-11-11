@@ -54,3 +54,15 @@ console.log(texto1 ?? 'retorna esto')
 let valor1 = null;
 console.log(valor1 ?? 'retorna esto')
 
+let definido = 'está definido'
+
+console.log(null ?? undefined ?? definido ?? 'retorna esto')
+
+console.log(null || undefined || definido || 'retorna esto')
+
+// console.log(1 && 2 ?? 3) //-> Syntax Error
+console.log((1 && 2) ?? 3)
+// console.log(1 || 2 ?? 3) //-> Syntax Error
+console.log((1 || 2) ?? 3)
+
+
