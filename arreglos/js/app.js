@@ -50,10 +50,36 @@ console.log(arreglo1)
 
 //recorrer un arreglo
 
-let arreglo2 = [1, 2, 3, 4, 5]
+let arreglo2 = ["1", "2", "3", "4", "5"]
 console.log(arreglo2.length)
 for(let i = 0; i < arreglo2.length; i++){
     console.log(arreglo2[i])
 }
 
+//forEach
+
+let itNum = arreglo2.forEach(function(numeros, i, arre){
+    return (numeros, i)
+})
+
+
+
+//map
+let numeros = [3, 5, 6, 8]
+
+let cuadrados = [];
+
+for(let i = 0; i < numeros.length; i++) {
+    cuadrados[i] = numeros[i] * numeros[i]
+}
+console.log(cuadrados)
+
+let numCuadrados = arreglo2.map(function(numero){
+    let aNumber = parseInt(numero)
+    return aNumber * aNumber
+    
+})
+console.log(numCuadrados)
+console.log(arreglo2)
+console.log(first)
 
