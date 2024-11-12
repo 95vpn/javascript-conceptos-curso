@@ -388,7 +388,7 @@ Los arreglos se representan con corchetes `[ ]` y cada dato está separados por 
 
 ```javascript
 let arreglo = [96, 'string', {}, true, [1, 2, 2]];
-						0      1       2     3  	  4
+indice  ->      0     1      2     3  	  4
 ```
 ### Obtener elementos dentro del arreglo
 ```javascript
@@ -453,6 +453,41 @@ console.log(arreglo1) -> 0, 8, true, false
 let copiaArr = arreglo1.slice()
 console.log(copiaArr) -> 0, 8, true, false
 ```
+### Recorriendo Arreglos
+```javascript
+let arreglo2 = [1, 2, 3, 4, 5]
+console.log(arreglo2.length) -> 5
+for(let i = 0; i < arreglo2.length; i++
+    console.log(i) -> 0, 1, 2, 3, 4
+}
+```
+Para recorrer arreglos existe el bucle for pero tambien existen métodos alternativos que son más expresivos, legibles y fácil de entender al momento de leer el código.
+
+- ### **forEach**
+Permite ejecutar una función sobre cada elemento del arreglo. Se puede poner un parametro.
+
+**Sintaxis:**
+
+```javascript
+arreglo.forEach(function( [nombre_relacionado_al_arreglo],  [indice],  [arreglo] ){
+	//instrucciones de código
+})
+```
+Ejemplo:
+```javascript
+let arreglo2 = ["1", "2", "3", "4", "5", "6"];
+
+arreglo2.forEach(function(numero, i, arreglo){
+	console.log(numero, i) -> ["1", 0], ["2", 1], ["3", 2], ["4", 3], ["5", 4], ["6", 5]
+})
+```
+- ### map
+
+De un arreglo original produce un nuevo arreglo después de ejecutar una function de modificación para cada uno de los elementos del arreglo original.
+
+
+
+
 
 
 
