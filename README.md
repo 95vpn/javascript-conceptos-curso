@@ -464,6 +464,29 @@ for(let i = 0; i < arreglo2.length; i++
 Para recorrer arreglos existe el bucle for pero tambien existen métodos alternativos que son más expresivos, legibles y fácil de entender al momento de leer el código.
 
 - ### **forEach**
+Permite ejecutar una función sobre cada elemento del arreglo. Se puede poner un parametro.
+
+**Sintaxis:**
+
+```javascript
+arreglo.forEach(function( [nombre_relacionado_al_arreglo],  [indice],  [arreglo] ){
+	//instrucciones de código
+})
+```
+Ejemplo:
+```javascript
+let arreglo2 = ["1", "2", "3", "4", "5", "6"];
+
+arreglo2.forEach(function(numero, i, arreglo){
+	console.log(numero, i) -> ["1", 0], ["2", 1], ["3", 2], ["4", 3], ["5", 4], ["6", 5]
+})
+```
+- ### map
+
+De un arreglo original produce un nuevo arreglo después de ejecutar una function de modificación para cada uno de los elementos del arreglo original.
+
+
+
 
 
 
